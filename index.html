@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es_pe">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autenticacion de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+<!-- Main Container -->
+<div class="container-fluid">
+<!-- Login Container -->
+<div class="row">
+<!-- Left Box -->
+<div class="col-md-6">
+  <div class="featured-enterprise mt-4">
+    <img src="images/logo-sunass.png" class="img-fluid mx-auto d-block" alt="Logo de Sunass: regulador del agua potable">
+  </div>
+  <div class="featured-software mt-3">
+    <img src="images/undraw_engineering-team_13ax 1.png" class="img-fluid mx-auto d-block" alt="Trabajadores realizando tareas en el sistema">
+  </div>
+
+</div>
+<!-- Rigth Box -->
+<div class="col-md-6 bg-primary shadow-lg rounded-start-5 vh-100 px-5 position-relative">
+  <h1 class="text-bg-primary fs-1 text-wrap mt-5 text-center ">Identificate</h1>
+  <p class="text-bg-primary fs-5 text-center">Accede para ingresar tus actividades y demás gestiones</p>
+  <form class="row g-2 bg-light rounded-4 p-3 mt-5 needs-validation" novalidate>
+    <div class="mb-3">
+      <label for="validationCustom01" class="form-label">Usuario</label>
+      <input type="text" class="form-control form-control-lg bg-light fs-6" id="validationCustom01" required>
+      <div class="invalid-feedback">
+        Ingresar el usuario
+      </div>
+    </div>
+    <div class="mb-3">
+      <label  for="validationCustom02" class="form-label">Contraseña</label>
+      <input type="password" class="form-control form-control-lg bg-light fs-6" id="validationCustom02" required>
+      <i class="bi bi-eye-slash fs-5" id="togglePassword"></i>
+      <div class="invalid-feedback">
+        Ingresar contraseña
+      </div>
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-success" type="submit">Ingresar</button>
+    </div>
+  </form>
+  <div class="position-absolute bottom-0">
+    <p class="text-center text-bg-primary">Desarrollado por ContacTEK Soft SAC</p>
+  </div>
+</div>
+</div>
+
+
+</div>
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js">   
+    </script>
+    <script>
+      (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
+    <script>
+      const togglePassword = document.querySelector('#togglePassword');
+      const password = document.querySelector('#validationCustom02');
+      togglePassword.addEventListener('click', (e) => {
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        e.target.classList.toggle('bi-eye');
+      });
+    </script>
+</body>
+</html>
