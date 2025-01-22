@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Orientaciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <!-- Main Container -->
+   <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex mt-2">
+                <button id="toggle-btn" type="button">
+                    <i class="bi bi-arrow-bar-right"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <img src="logo-sunass-blanco-480x207.png" alt="logo de Sunass en blanco" class="logosunass">
+                </div>
+            </div>
+            <div class="d-flex justify-content-between shadow-sm p-2 mb-3 mt-3 rounded area-user">
+                <div class="user-item">
+                      <i class="bi bi-person-circle"></i>    
+                </div>
+                <div class="sidebar-user w-100 ps-2 pe-2">
+                    <p>Karina Olmos</p>
+                    <span>Administrador</span>
+                </div>
+                <div class="sidebar-exit pt-1">
+                    <button id="btn-exit">
+                        <i class="bi bi-escape"></i>  
+                    </button>
+                    </a>
+                </div>
+
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="dashboard.html" class="sidebar-link">
+                        <i class="bi bi-grid"></i>
+                        <span>Panel de Inicio</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="orientaciones.html" class="sidebar-link">
+                        <i class="bi bi-chat-text"></i>
+                        <span>Orientaciones</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-exclamation-square"></i>
+                        <span>Asistencia Tecnica</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-megaphone"></i>
+                        <span>Promoción y Difusión</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-broadcast"></i>
+                        <span>Audiencias Publicas</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-file-earmark-spreadsheet"></i>
+                        <span>Estudios Tarifarios</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-people"></i>
+                        <span>Consejo de Usuarios</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-folder"></i>
+                        <span>Directorio Aliado</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-map"></i>
+                        <span>Mapa Geografico</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-gear"></i>
+                        <span>Configuración</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer px-3">
+               
+                    <span>Creado por ContacTEK | Version 0.1</span>
+                
+            </div>
+        </aside>
+        <div class="main shadow">
+            <nav class="navbar navbar-expand px-4 py-3">
+                <div class="w-100">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="title-home">
+                                <div class="d-flex">
+                                    <i class="bi bi-chat-text"></i>
+                                    <h1>Listado de Orientaciones</h1>
+                                       
+                                </div>
+                                
+                            </div>
+                            <div>
+                                <p>
+                                    Puede filtrar y gestionar los registros de orientaciones creado por las ODS
+                                </p> 
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            
+                            </div>
+                        </div>
+                    </div>  
+            </nav>
+            <main class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <label for="" class="form-label">Nro de ticket</label>
+                            <input type="text" class="form-control" id="" aria-describedby="">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <label for="" class="form-label">ODS</label>
+                            <input type="text" class="form-control" id="" aria-describedby="">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <label for="" class="form-label">DNI contacto</label>
+                            <input type="text" class="form-control" id="" aria-describedby="">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <label for="" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="" aria-describedby="">
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-3">
+                            <button type="button" class="btn btn-outline-success">Filtrar</button>
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row pt-4 pb-1">
+                        <div class="col-3">
+                            <a href="nueva-orientacion.html">
+                                <button type="button" class="btn btn-outline-primary"><i class="bi bi-plus"></i>Nuevo</button>
+                            </a>
+                            
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                        <div class="col-3"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Nro Ticket</th>
+                                    <th scope="col">ODS</th>
+                                    <th scope="col">Nombre del Gestor</th>
+                                    <th scope="col">Fecha y hora</th>
+                                    <th scope="col">Nro Suministro</th>
+                                    <th scope="col">DNI contacto</th>
+                                    <th scope="col">Nombre</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><i class="bi bi-pencil-square"></i></th>
+                                    <td><i class="bi bi-arrow-repeat"></i></th>
+                                    <td><i class="bi bi-whatsapp"></i></th>
+                                    <td>841.070 </td>
+                                    <td>OAU SEDE CENTRAL</td>
+                                    <td>Wendy Guevara </td>
+                                    <td>17/01/2025 14:17:30</td>
+                                    <td>70020082</td>
+                                    <td>34567834</td>
+                                    <td>Hijo</td>
+                                  </tr>
+                                  <tr>
+                                    <td><i class="bi bi-pencil-square"></i></th>
+                                    <td><i class="bi bi-arrow-repeat"></i></th>
+                                    <td><i class="bi bi-whatsapp"></i></th>
+                                    <td>841.070 </td>
+                                    <td>OAU SEDE CENTRAL</td>
+                                    <td>Wendy Guevara </td>
+                                    <td>17/01/2025 14:17:30</td>
+                                    <td>70020082</td>
+                                    <td>34567834</td>
+                                    <td>Hijo</td>
+                                  </tr>
+                                  <tr>
+                                    <td><i class="bi bi-pencil-square"></i></th>
+                                    <td><i class="bi bi-arrow-repeat"></i></th>
+                                    <td><i class="bi bi-whatsapp"></i></th>
+                                    <td>841.070 </td>
+                                    <td>OAU SEDE CENTRAL</td>
+                                    <td>Wendy Guevara </td>
+                                    <td>17/01/2025 14:17:30</td>
+                                    <td>70020082</td>
+                                    <td>34567834</td>
+                                    <td>Hijo</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                      </div>
+                    
+                </div>
+                    
+                
+            </main>
+        </div>
+   </div>
+<script src="bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
