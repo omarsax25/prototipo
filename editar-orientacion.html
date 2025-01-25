@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Orientación</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+    <!-- Main Container -->
+   <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex mt-2">
+                <button id="toggle-btn" type="button">
+                    <i class="bi bi-arrow-bar-right"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <img src="logo-sunass-blanco-480x207.png" alt="logo de Sunass en blanco" class="logosunass">
+                </div>
+            </div>
+            <div class="d-flex justify-content-between shadow-sm p-2 mb-3 mt-3 rounded area-user">
+                <div class="user-item">
+                      <i class="bi bi-person-circle"></i>    
+                </div>
+                <div class="sidebar-user w-100 ps-2 pe-2">
+                    <p>Karina Olmos</p>
+                    <span>Administrador</span>
+                </div>
+                <div class="sidebar-exit pt-1">
+                    <button id="btn-exit">
+                        <i class="bi bi-escape"></i>  
+                    </button>
+                    </a>
+                </div>
+
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="dashboard.html" class="sidebar-link">
+                        <i class="bi bi-grid"></i>
+                        <span>Panel de Inicio</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="bi bi-chat-text"></i>
+                        <span>Orientaciones</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Panel</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="nueva-orientacion.html" class="sidebar-link">Nuevo</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="orientaciones.html" class="sidebar-link">Listado</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">Reporte</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-exclamation-square"></i>
+                        <span>Asistencia Tecnica</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-megaphone"></i>
+                        <span>Promoción y Difusión</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-broadcast"></i>
+                        <span>Audiencias Publicas</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-file-earmark-spreadsheet"></i>
+                        <span>Estudios Tarifarios</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-people"></i>
+                        <span>Consejo de Usuarios</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-folder"></i>
+                        <span>Directorio Aliado</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-map"></i>
+                        <span>Mapa Geografico</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-gear"></i>
+                        <span>Configuración</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer px-3">
+               
+                    <span>Creado por ContacTEK | Version 0.1</span>
+                
+            </div>
+        </aside>
+        <div class="main shadow">
+            <nav class="navbar navbar-expand px-4 py-3">
+                <div class="w-100">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="title-home">
+                                <div class="d-flex">
+                                    <i class="bi bi-chat-text"></i>
+                                    <h1>Editar Orientación</h1>
+                                       
+                                </div>
+                                
+                            </div>
+                            <div>
+                                <p>
+                                    Debe cumplir con el llenado de los campos obligatorios, asi mismo debes terminar la orientacion en el tiempo establecido
+                                </p> 
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="badge bg-primary text-wrap" style="width: 8rem;">
+                                Quedan 15 dias
+                            </div>
+                            <div class="p-2">
+                                Falta por completar
+                            </div>
+                            <div class="progress">
+                                
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                              </div>
+                        </div>
+                        </div>
+                    </div>  
+            </nav>
+            <main class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-3 form-group">
+                            <label for="" class="form-label">Nro de ticket</label>
+                            <input type="text" class="form-control input-sm" id="" aria-describedby="" disabled value="654329234">
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <label for="" class="form-label">ODS</label>
+                            <input type="text" class="form-control" id="" aria-describedby="">
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-6">
+                            <label for="" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="" aria-describedby="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="container-fluid pt-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active" id="simple-tab-0" data-bs-toggle="tab" href="#simple-tabpanel-0" role="tab" aria-controls="simple-tabpanel-0" aria-selected="true">General</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="simple-tab-1" data-bs-toggle="tab" href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1" aria-selected="false">Gestión</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="simple-tab-2" data-bs-toggle="tab" href="#simple-tabpanel-2" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false">Gestores</a>
+                        </li>
+                        
+                      </ul>
+                      <div class="tab-content " id="tab-content">
+                        <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">
+                            <div class="container">
+                                <div class="row pt-2">
+                                    <div class="col-12 col-sm-6 col-lg-3">
+                                        <label for="" class="form-label">Fecha realizado</label>
+                                        <div class="row">
+                                            <div class="col-6 col-sm-6 col-lg-6 form-group">
+                                                <input type="date" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-6 col-sm-6 col-lg-6 form-group">
+                                                <input type="time" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-3">
+                                        <label for="" class="form-label">Fecha incidencias</label>
+                                        <div class="row">
+                                            <div class="col-6 col-sm-6 col-lg-6 form-group">
+                                                <input type="date" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-6 col-sm-6 col-lg-6 form-group">
+                                                <input type="time" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                        <label for="" class="form-label">Celular contacto</label>
+                                        <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-lg-3 form-group" >
+                                        <label for="" class="form-label">Teléfono contacto</label>
+                                        <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                    </div>
+                                </div>
+                                <div class="row pt-2">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <i class="bi bi-megaphone"></i> Campaña de difusión
+                                        </div>
+                                        <div class="card-body">
+                                          <div class="row">
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Canal</label>
+                                                <select class="form-control" id="sel1">
+                                                    <option>Campaña Orientación</option>
+                                                    <option>Campaña prestación</option>
+                                                    <option>Correo Electronico</option>
+                                                    <option>Escrito</option>
+                                                  </select>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Nro WhasttApp</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Asunto WhasttApp</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Encuesta WhasttApp</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    
+                                </div>
+                                <div class="row pt-2">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <i class="bi bi-person-vcard"></i> Información de contacto
+                                        </div>
+                                        <div class="card-body">
+                                          <div class="row">
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Nombre Contacto</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Apellido Contacto</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">DNI Contacto</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Lengua</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Sexo</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Tipo Discapacidad</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-6 form-group">
+                                                <label for="" class="form-label">Correo</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    
+                                </div>
+                                
+                                <div class="row pt-2">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <i class="bi bi-building"></i> Información de ODS
+                                        </div>
+                                        <div class="card-body">
+                                          <div class="row pt-2">
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Nro Suministro</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-6 form-group">
+                                                <label for="" class="form-label">Sector</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                
+                                            </div>
+                                          </div>
+                                          <div class="row pt-2">
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Departamento</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Provincia</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Distrito</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Tipo Dirección</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                          </div>
+                                          <div class="row pt-2">
+                                            <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                <label for="" class="form-label">Nro Dirección</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-9 form-group">
+                                                <label for="" class="form-label">Nombre Dirección</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                          </div>
+                                          <div class="row pt-2">
+                                            <div class="col-12 col-sm-12 col-lg-12 form-group">
+                                                <label for="" class="form-label">Referencia</label>
+                                                <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    
+                                </div>
+                                
+                                
+                                <div class="row pt-2">
+                                   
+                                        <div class="card">
+                                            <div class="card-header">
+                                              <i class="bi bi-geo"></i> Geolocalización
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row pt-2">
+                                                    <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                        <label for="" class="form-label">Latitud</label>
+                                                        <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-lg-3 form-group">
+                                                        <label for="" class="form-label">Longitud</label>
+                                                        <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-lg-6 form-group">
+                                                        <label for="" class="form-label">Google Maps</label>
+                                                        <input type="text" class="form-control input-sm" id="" aria-describedby="">
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                          </div>
+                                    
+                                    
+                                </div>
+                                <div class="row pt-2 pb-5">
+                                    <div class="col-3">
+                                        
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="orientaciones.html">
+                                            <button type="button" class="btn btn-success">Guardar</button>
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="col-3"></div>
+                                    <div class="col-3"></div>
+                                </div>
+                                </div>
+                                
+                        </div>
+                        <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">
+                            <div class="container ">
+                                <div class="card pt-2">
+                                    <div class="card-header">
+                                        <i class="bi bi-patch-exclamation"></i> Detalle de la Reclamación
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row pt-2">
+                                            <div class="col-12 col-sm-6 col-lg-3">
+                                                <label for="" class="form-label">Reclamo (*)</label>
+                                                <select class="form-control" id="sel1">
+                                                    <option>Comercial Relativo a Facturación</option>
+                                                    <option>Campaña prestación</option>
+                                                    <option>Correo Electronico</option>
+                                                    <option>Escrito</option>
+                                                  </select>  
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-9">
+                                                <label for="" class="form-label">Tipología/ Materia de servicio (*)</label>
+                                                        <select class="form-control" id="sel1">
+                                                            <option>Facturación Excesiva Consumo Promedio</option>
+                                                            <option>Campaña prestación</option>
+                                                            <option>Correo Electronico</option>
+                                                            <option>Escrito</option>
+                                                          </select>
+                                            </div>
+                                        </div>
+                                        <div class="row pt-2">
+                                            <div class="col-12 col-sm-6 col-lg-6">
+                                                <label for="" class="form-label">Presunto Incumplimiento (*)</label>
+                                                <select class="form-control" id="sel1">
+                                                    <option>Comercial Relativo a Facturación</option>
+                                                    <option>Campaña prestación</option>
+                                                    <option>Correo Electronico</option>
+                                                    <option>Escrito</option>
+                                                  </select>  
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3">
+                                                <label for="" class="form-label">Tipo de Atención (*)</label>
+                                                        <select class="form-control" id="sel1">
+                                                            <option>Facturación Excesiva Consumo Promedio</option>
+                                                            <option>Campaña prestación</option>
+                                                            <option>Correo Electronico</option>
+                                                            <option>Escrito</option>
+                                                          </select>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3">
+                                                <label for="" class="form-label">Evaluación de Calidad (*)</label>
+                                                        <select class="form-control" id="sel1">
+                                                            <option>Facturación Excesiva Consumo Promedio</option>
+                                                            <option>Campaña prestación</option>
+                                                            <option>Correo Electronico</option>
+                                                            <option>Escrito</option>
+                                                          </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                
+                            </div>
+                            <div class="card pt-2">
+                                <div class="card-header">
+                                    <i class="bi bi-award"></i> Detalle de los resultados
+                                </div>
+                                <div class="card-body">
+                                  
+                                </div>
+                              </div>
+                              <div class="card pt-2">
+                                <div class="card-header">
+                                    <i class="bi bi-check-circle"></i> Estado del proceso
+                                </div>
+                                <div class="card-body">
+                                  
+                                </div>
+                              </div>
+                        </div>
+                        <div class="tab-pane" id="simple-tabpanel-2" role="tabpanel" aria-labelledby="simple-tab-3">Gestores</div>
+                        
+                      </div>
+                    
+                </div>
+                    
+                
+            </main>
+        </div>
+   </div>
+<script src="bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
