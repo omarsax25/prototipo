@@ -4,6 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import "./node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -12272,30 +12273,48 @@ a.user-photo {
 
 .title-home i {
   color: var(--bs-azulsunass);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-right: 5px;
 }
 
 .title-home h1, .title-home .h1 {
   color: var(--bs-azulsunass);
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin-right: 5px;
 }
 
 .title-home span {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: gray;
+}
+
+.title-home p {
+  font-size: 0.85rem;
+}
+
+.item-register {
+  padding: 8px;
 }
 
 .item-register div {
   margin-bottom: 2px;
+  padding: 6px;
+  font-size: 0.85rem;
+}
+
+.content-register {
   padding: 8px;
+}
+
+.content-register p {
+  font-size: 0.8rem;
 }
 
 .user-register div {
   margin-bottom: 2px;
   padding: 6px;
+  font-size: 0.8rem;
 }
 
 .user-register div span {

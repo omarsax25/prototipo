@@ -10,7 +10,7 @@ $custom-colors: (
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
-//@import "./node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
+@import "./node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 
 .featured-enterprise img {
     height: 150px;
@@ -205,26 +205,42 @@ a.user-photo {
 }
 .title-home i {
     color: var(--bs-azulsunass);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-right: 5px;
 }
 .title-home h1 {
     color: var(--bs-azulsunass);
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     margin-right: 5px;
 }
 .title-home span {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: gray;
+}
+.title-home p {
+    font-size: 0.85rem;;
+}
+.item-register{
+    padding: 8px;
 }
 .item-register div {
     margin-bottom: 2px;
+    padding: 6px;
+    font-size: 0.85rem;
+    
+}
+.content-register {
     padding: 8px;
+}
+.content-register p,
+ {
+    font-size: 0.8rem;
 }
 .user-register div {
     margin-bottom: 2px;
     padding: 6px;
+    font-size: 0.8rem;
 }
 .user-register div span {
     color: var(--bs-azulsunass);
