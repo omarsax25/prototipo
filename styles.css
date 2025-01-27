@@ -6853,6 +6853,7 @@ textarea.form-control-lg {
 
 .text-bg-primary {
   color: #fff !important;
+  background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
@@ -12189,7 +12190,7 @@ a.sidebar-link:hover {
   position: absolute;
   top: 0;
   left: 70px;
-  background-color: #0e2238;
+  background-color: var(--bs-azulsunass);
   padding: 0;
   min-width: 15rem;
   display: none;
