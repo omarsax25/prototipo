@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es_pe">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,9 +54,7 @@
                         <li class="sidebar-item">
                             <a href="#" class="sidebar-link">Panel</a>
                         </li>
-                        <li class="sidebar-item">
-                            <a href="nueva-orientacion.html" class="sidebar-link">Nuevo</a>
-                        </li>
+                        
                         <li class="sidebar-item">
                             <a href="orientaciones.html" class="sidebar-link">Listado</a>
                         </li>
@@ -182,9 +180,53 @@
                             </a>
                             
                         </div>
+                        <div class="col-3">
+                        </div>
                         <div class="col-3"></div>
-                        <div class="col-3"></div>
-                        <div class="col-3"></div>
+                        <div class="col-3 text-end">
+                                   <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    <i class="bi bi-file-earmark-bar-graph"></i>
+  </button>
+      
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel"><i class="bi bi-file-earmark-bar-graph"></i> Generar Reporte</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-6 mb-3">
+                <label for="" class="form-label">Desde</label>
+                <input type="date" class="form-control input-sm" id="" aria-describedby="">
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 mb-3">
+                <label for="" class="form-label">Hasta</label>
+                <input type="date" class="form-control input-sm" id="" aria-describedby="">
+            </div>
+            <div class="col-12 col-md-12 col-lg-12">
+                <label for="" class="form-label">ODS a procesar</label>
+                <select class="form-control" id="sel1">
+                    <option>Todos</option>
+                    <option>OAU Callao</option>
+                    <option>OAU Cañete</option>
+                    <option>OAU Lince</option>
+                  </select>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Generar</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+                        </div>
                     </div>
                     <div class="card">
                         <div class="card-body">
