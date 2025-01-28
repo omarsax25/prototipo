@@ -12360,6 +12360,24 @@ a.user-photo {
   background-color: var(--bs-warning-bg-subtle);
 }
 
+.area-register {
+  padding: 10px 0px;
+}
+
+.area-register h5, .area-register .h5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.area-register div div label {
+  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+}
+
+.area-register div div a button {
+  font-size: 0.85rem;
+}
+
 @media (max-width: 768px) {
   .title-home div {
     display: inline-block;
