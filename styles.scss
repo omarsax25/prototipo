@@ -234,6 +234,7 @@ a.user-photo {
     padding: 8px;
 }
 .content-register p,
+.content-register a
  {
     font-size: 0.8rem;
 }
@@ -244,6 +245,43 @@ a.user-photo {
 }
 .user-register div span {
     color: var(--bs-azulsunass);
+}
+.area-grid-sunass div {
+    padding: 5px 0px;
+}
+.table > :not(caption) > * > * {
+    color: var(--bs-azulsunass);
+    font-size: 0.9rem;
+}
+.grid-sunass > tbody > tr  {
+    border: 1px solid #E7E7E7;
+    border-radius: 4px;
+    color: #727373;
+    
+}
+.grid-sunass tbody,
+.grid-sunass thead  {
+   
+    overflow-x:scroll;
+   
+}
+
+.grid-sunass > tbody > tr > td  {
+    color: #727373;
+    background-color: #FBFBFB;
+    font-size: 0.8rem;
+    padding: 0.4rem 0.4rem;
+}
+.grid-sunass > tbody > tr > td > a {
+    font-size: 0.9rem;
+    
+}
+.grid-sunass > tbody > tr:nth-of-type(2n+1) > * {
+    background-color: #DDF3FF;
+}
+.grid-sunass > tbody >tr:hover > * {
+    background-color: var(--bs-warning-bg-subtle);
+    
 }
 @media (max-width: 768px) {
     .title-home div {
