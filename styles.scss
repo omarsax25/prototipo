@@ -299,6 +299,9 @@ a.user-photo {
     font-size: 0.85rem;
     
 }
+.text-bg-primary {
+    background-color: var(--bs-azulsunass) !important;
+}
 @media (max-width: 768px) {
     .title-home div {
        display: inline-block;
