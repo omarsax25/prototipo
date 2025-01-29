@@ -24,19 +24,54 @@
                 <div class="user-item">
                       <i class="bi bi-person-circle"></i>    
                 </div>
-                <div class="sidebar-user w-100 ps-2 pe-2">
+                <div class="sidebar-user w-100 ps-2 ">
                     <p>Karina Olmos</p>
                     <span>Administrador</span>
                 </div>
                 <div class="sidebar-exit pt-1">
-                    <a href="index.html">
-                        <button id="btn-exit">
-                            <i class="bi bi-escape"></i>  
-                        </button>
-                    </a>
+                    <div class="d-flex">
+                        <div class="pe-2">
+                            <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <button id="btn-exit" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                                    <i class="bi bi-grid-fill"></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="">
+                            <a href="index.html">
+                            <button id="btn-exit">
+                                <i class="bi bi-escape"></i>  
+                            </button>
+                        </a></div>
+                    </div>
+                    
                 </div>
-
             </div>
+            <div class="collapse" id="collapseExample">
+                <div class="d-flex justify-content-between shadow-sm p-2 mb-1 mt-1 rounded area-user">
+                    <div class="pe-2">
+                        <a href="">
+                            <button id="btn-exit" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                                <i class="bi bi-shield-shaded"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="pe-2">
+                        <a href="">
+                            <button id="btn-exit" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                                <i class="bi bi-droplet-half"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="pe-2">
+                        <a href="">
+                            <button id="btn-exit" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                                <i class="bi bi-headset"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+              </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
                     <a href="dashboard.html" class="sidebar-link">
